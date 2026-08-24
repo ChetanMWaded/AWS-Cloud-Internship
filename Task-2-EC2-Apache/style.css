@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f7;
+    color: #222;
+}
+
+header {
+    background: #075e2d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #075e2d;
+    border-bottom: 2px solid #075e2d;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #075e2d;
+}
+
+.match-info {
+    font-weight: bold;
+    color: #555;
+}
+
+.live {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #087f23;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #075e2d;
+    color: white;
+}
+
+th,
+td {
+    padding: 13px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover {
+    background: #f1f8f4;
+}
+
+.score-number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.teams {
+    display: flex;
+    gap: 50px;
+}
+
+.teams > div {
+    flex: 1;
+    background: #f5f9f6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.match-details {
+    background: #f5f9f6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer h3 {
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .teams {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
